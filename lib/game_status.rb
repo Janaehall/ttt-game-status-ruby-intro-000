@@ -36,3 +36,11 @@ end
 def full?(board)
   board.none?{|pos| pos == " "}
 end
+
+def draw?(board)
+  if full(board) and won?(board) == false
+    true
+  else
+    false
+  end
+end
