@@ -44,3 +44,11 @@ def draw?(board)
     false
   end
 end
+
+def over?(board)
+  if draw?(board) or win?(board)
+    true
+  else
+    false
+  end
+end
